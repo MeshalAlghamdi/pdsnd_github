@@ -167,7 +167,8 @@ def station_stats(df):
 
     
     # TO DO: display most commonly used start station
-    
+    Start_Station = df['Start Station'].value_counts().idxmax()
+    print('Most Commonly used start station:', Start_Station)
 
 
     # TO DO: display most commonly used end station
